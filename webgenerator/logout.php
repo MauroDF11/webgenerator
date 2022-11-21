@@ -1,8 +1,6 @@
 <?php
-define("HOST", "mattprofe.com.ar");
-define("USER", "3799");
-define("PASS", "3799");
-define("DB", "3799");
-$db = mysqli_connect(HOST,USER,PASS,DB);
+    session_start();
+    session_unset();
+    session_destroy();
+    header("location:login.php");
 ?>
-
